@@ -1,0 +1,30 @@
+948f7562d1a3
+*** Reading local file: /opt/airflow/logs/dag_id=de_course_v2.1/run_id=scheduled__2022-09-28T00:00:00+00:00/task_id=hits_processing/attempt=1.log
+[2022-09-28T17:32:52.594+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: de_course_v2.1.hits_processing scheduled__2022-09-28T00:00:00+00:00 [queued]>
+[2022-09-28T17:32:52.602+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: de_course_v2.1.hits_processing scheduled__2022-09-28T00:00:00+00:00 [queued]>
+[2022-09-28T17:32:52.603+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-28T17:32:52.604+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-28T17:32:52.604+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-28T17:32:52.614+0000] {taskinstance.py:1389} INFO - Executing <Task(PythonOperator): hits_processing> on 2022-09-28 00:00:00+00:00
+[2022-09-28T17:32:52.619+0000] {standard_task_runner.py:52} INFO - Started process 14916 to run task
+[2022-09-28T17:32:52.621+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'de_course_v2.1', 'hits_processing', 'scheduled__2022-09-28T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/de_course/dags/de_course_dag.py', '--cfg-path', '/tmp/tmpbb6mzy3d', '--error-file', '/tmp/tmpwt_d3k33']
+[2022-09-28T17:32:52.623+0000] {standard_task_runner.py:80} INFO - Job 119: Subtask hits_processing
+[2022-09-28T17:32:52.667+0000] {task_command.py:371} INFO - Running <TaskInstance: de_course_v2.1.hits_processing scheduled__2022-09-28T00:00:00+00:00 [running]> on host 948f7562d1a3
+[2022-09-28T17:32:52.715+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=AGol
+AIRFLOW_CTX_DAG_ID=de_course_v2.1
+AIRFLOW_CTX_TASK_ID=hits_processing
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-28T00:00:00+00:00
+[2022-09-28T17:33:00.221+0000] {logging_mixin.py:115} INFO - add files: 4
+[2022-09-28T17:33:00.229+0000] {logging_mixin.py:115} INFO - processing
+[2022-09-28T17:33:01.405+0000] {logging_mixin.py:115} INFO - ok
+[2022-09-28T17:33:05.504+0000] {logging_mixin.py:115} INFO - pickle file complete
+[2022-09-28T17:33:05.861+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-28T17:33:05.991+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=de_course_v2.1, task_id=hits_processing, execution_date=20220928T000000, start_date=20220928T173252, end_date=20220928T173305
+[2022-09-28T17:33:06.333+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-28T17:33:06.390+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
